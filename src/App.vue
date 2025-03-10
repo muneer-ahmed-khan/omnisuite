@@ -5,8 +5,8 @@ import { useStateStore } from '@/stores/stateStore'
 const stateStore = useStateStore()
 
 import MainHeader from '@/components/layouts/MainHeader.vue'
-// import MainSidebar from './components/Layouts/MainSidebar.vue'
-// import MainFooter from './components/Layouts/MainFooter.vue'
+import MainSidebar from '@/components/layouts/MainSidebar.vue'
+import MainFooter from '@/components/layouts/MainFooter.vue'
 
 // Side-effect previously in mounted()
 onMounted(() => {
@@ -29,9 +29,9 @@ watchEffect(() => {
 
 <template>
   <MainHeader />
-  <!-- <MainSidebar /> -->
+  <MainSidebar />
   <div class="main-content d-flex flex-column transition overflow-hidden">
     <router-view />
-    <!-- <MainFooter /> -->
+    <MainFooter />
   </div>
 </template>
