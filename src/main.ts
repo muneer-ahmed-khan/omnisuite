@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
-import App from './App.vue'
-import router from './router'
+import App from '@/App.vue'
+import router from '@/router'
 
 // Import theme plugins
 import { createBootstrap } from 'bootstrap-vue-next'
@@ -20,7 +20,7 @@ import '@vueup/vue-quill/dist/vue-quill.snow.css'
 import '@vueup/vue-quill/dist/vue-quill.bubble.css'
 import 'vue3-prism/lib/Vue3Prism.css'
 
-import './assets/custom.scss'
+import '@/assets/custom.scss'
 
 const app = createApp(App)
 

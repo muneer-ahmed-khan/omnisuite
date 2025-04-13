@@ -1,37 +1,29 @@
 <script setup lang="ts">
-import { onMounted, watchEffect } from 'vue'
-import { useStateStore } from '@/stores/stateStore'
-
-const stateStore = useStateStore()
-
-import MainHeader from '@/components/layouts/MainHeader.vue'
-import MainSidebar from '@/components/layouts/MainSidebar.vue'
-import MainFooter from '@/components/layouts/MainFooter.vue'
-
-// Side-effect previously in mounted()
-onMounted(() => {
-  document.body.classList.add('bg-body-secondary')
+// Component Name
+defineOptions({
+  name: 'App',
 })
 
-// Watch stateStore for changes
-watchEffect(() => {
-  if (stateStore.open) {
-    document.body.classList.remove('sidebar-show')
-    document.body.classList.add('sidebar-hide')
-    console.log('show')
-  } else {
-    document.body.classList.remove('sidebar-hide')
-    document.body.classList.add('sidebar-show')
-    console.log('hide')
-  }
-})
+// Import composables
+import { useBodyClass } from '@/composables/useBodyClass'
+
+// Set up global body class management for layout
+useBodyClass()
 </script>
 
 <template>
+  <!-- Main header of the application -->
   <MainHeader />
+
+  <!-- Sidebar navigation -->
   <MainSidebar />
+
+  <!-- Main content area -->
   <div class="main-content d-flex flex-column transition overflow-hidden">
+    <!-- Route outlet -->
     <router-view />
+
+    <!-- Main footer -->
     <MainFooter />
   </div>
 </template>
