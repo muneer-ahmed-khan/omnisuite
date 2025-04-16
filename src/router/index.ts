@@ -4,8 +4,8 @@ import type { RouteRecordRaw } from 'vue-router'
 const routes: RouteRecordRaw[] = [
   {
     path: '/',
-    name: 'EcommercePage',
-    component: () => import('@/views/BlankPage.vue'),
+    name: 'ECommercePage',
+    component: () => import('@/views/dashboard/ECommerce.vue'),
   },
   {
     path: '/project-management',
