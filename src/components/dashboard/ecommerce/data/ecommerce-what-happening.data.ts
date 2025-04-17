@@ -1,6 +1,6 @@
 // Static data for the WhatHappening component
 
-import type { WelcomeStat } from '../types/what-happening.types'
+import type { WelcomeStat } from '../types/ecommerce-what-happening.types'
 import welcome1 from '@/assets/images/welcome/welcome1.png'
 
 /**

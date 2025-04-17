@@ -17,9 +17,9 @@
  * - Imports an image asset for the welcome section.
  */
 
-import { userName, welcomeStats, welcomeImage } from './data/what-happening.data'
+import { userName, welcomeStats, welcomeImage } from './data/ecommerce-what-happening.data'
 
-defineOptions({ name: 'WhatHappening' })
+defineOptions({ name: 'EcommerceWhatHappening' })
 </script>
 
 <template>

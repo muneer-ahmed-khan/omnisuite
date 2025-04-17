@@ -10,12 +10,12 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/project-management',
     name: 'ProjectManagementPage',
-    component: () => import('@/views/BlankPage.vue'),
+    component: () => import('@/views/dashboard/ProjectManagement.vue'),
   },
   {
     path: '/support-desk',
     name: 'SupportDeskPage',
-    component: () => import('@/views/BlankPage.vue'),
+    component: () => import('@/views/dashboard/SupportDesk.vue'),
   },
   {
     path: '/lms-courses',
