@@ -20,7 +20,7 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/lms-courses',
     name: 'LMSCoursesPage',
-    component: () => import('@/views/BlankPage.vue'),
+    component: () => import('@/views/dashboard/LMSCourses.vue'),
   },
   {
     path: '/crm-system',

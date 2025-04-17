@@ -15,7 +15,7 @@
  * <LMSCoursesPage />
  *
  * @components (auto-imported or imported directly)
- *   - WhatHappening
+ *   - LMSCoursesWhatHappening
  *   - TodaysCourse
  *   - TodaysEvent
  *   - AverageEnrollmentRate
@@ -28,7 +28,7 @@
  *
  * @layout
  * The dashboard is organized into a responsive grid layout where:
- *   - The top section features "WhatHappening".
+ *   - The top section features "LMSCoursesWhatHappening".
  *   - The next row shows today’s courses and events side by side.
  *   - The right side displays average enrollment rate.
  *   - The bottom rows feature a variety of course-related insights in a
@@ -42,38 +42,38 @@ defineOptions({
 </script>
 
 <template>
-  <!-- <WhatHappening /> -->
+  <LMSCoursesWhatHappening />
 
   <div class="row">
     <div class="col-xxl-6">
       <div class="row">
         <div class="col-lg-6">
-          <!-- <TodaysCourse /> -->
+          <TodaysCourse />
         </div>
         <div class="col-lg-6">
-          <!-- <TodaysEvent /> -->
+          <TodaysEvent />
         </div>
       </div>
     </div>
 
     <div class="col-xxl-6">
-      <!-- <AverageEnrollmentRate /> -->
+      <AverageEnrollmentRate />
     </div>
 
     <div class="col-xxl-4">
-      <!-- <CategoriesCourses /> -->
-      <!-- <StudentsProgress /> -->
+      <CategoriesCourses />
+      <StudentsProgress />
     </div>
 
     <div class="col-xxl-8">
-      <!-- <CoursesClass /> -->
-      <!-- <FundamentalCourses /> -->
+      <CoursesClass />
+      <FundamentalCourses />
       <div class="row">
         <div class="col-lg-6 col-xxxl-5">
-          <!-- <PerformanceProgress /> -->
+          <PerformanceProgress />
         </div>
         <div class="col-lg-6 col-xxxl-7">
-          <!-- <ToDoList /> -->
+          <ToDoList :list="4" />
         </div>
       </div>
     </div>

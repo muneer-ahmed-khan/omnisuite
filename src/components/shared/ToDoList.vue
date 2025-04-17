@@ -8,6 +8,10 @@
 
 import { toDoList } from './data/to-do-list.data'
 
+defineProps({
+  list: Number,
+})
+
 defineOptions({
   name: 'ToDoList',
 })

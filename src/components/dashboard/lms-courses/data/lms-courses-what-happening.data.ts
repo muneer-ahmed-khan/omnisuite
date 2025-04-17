@@ -5,7 +5,7 @@
  * dashboard, including total courses, certificates, scores, and hours learned.
  */
 
-import type { WhatHappeningUpdate } from '@/types/lms-courses/what-happening-types'
+import type { WhatHappeningUpdate } from '../types/lms-courses-what-happening.types'
 
 export const updates: WhatHappeningUpdate[] = [
   {
@@ -37,3 +37,5 @@ export const updates: WhatHappeningUpdate[] = [
     number: 822,
   },
 ]
+
+export const welcomeImage = new URL('@/assets/images/welcome/welcome3.png', import.meta.url).href
