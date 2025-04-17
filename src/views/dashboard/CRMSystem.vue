@@ -23,7 +23,7 @@
  *   - ForBetterOutreach
  *   - TopPerformer
  *   - RevenueTargetByCountry
- *   - ToDoList
+ *   - CRMToDoLists
  *   - RecentLeads
  *   - CallLeads
  *   - CampaignsChart
@@ -55,7 +55,7 @@ defineOptions({ name: 'CRMSystemPage' })
         <div class="col-lg-8"><RevenueTargetByCountry /></div>
       </div>
       <div class="row">
-        <div class="col-lg-5"><ToDoList /></div>
+        <div class="col-lg-5"><CRMToDoList /></div>
         <div class="col-lg-7"><RecentLeads /></div>
       </div>
     </div>

@@ -25,7 +25,7 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/crm-system',
     name: 'CRMSystemPage',
-    component: () => import('@/views/BlankPage.vue'),
+    component: () => import('@/views/dashboard/CRMSystem.vue'),
   },
   {
     path: '/file-manager',
