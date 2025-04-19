@@ -45,17 +45,17 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/chat',
     name: 'ChatPage',
-    component: () => import('@/views/BlankPage.vue'),
+    component: () => import('@/views/ChatView.vue'),
   },
   {
     path: '/chat-group',
     name: 'ChatGroupPage',
-    component: () => import('@/views/BlankPage.vue'),
+    component: () => import('@/views/ChatGroupView.vue'),
   },
   {
     path: '/chat-contact',
     name: 'ChatContactPage',
-    component: () => import('@/views/BlankPage.vue'),
+    component: () => import('@/views/ChatContactView.vue'),
   },
   {
     path: '/leads',

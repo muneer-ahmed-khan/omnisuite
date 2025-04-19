@@ -15,6 +15,10 @@ const title = scheduleData.title
 const scheduleStats = scheduleData.stats
 
 const scheduleItems = scheduleData.items
+
+defineOptions({
+  name: 'TodaysSchedule',
+})
 </script>
 
 <template>
