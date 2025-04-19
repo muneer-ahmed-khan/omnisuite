@@ -30,17 +30,17 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/file-manager',
     name: 'FileManagerPage',
-    component: () => import('@/views/BlankPage.vue'),
+    component: () => import('@/views/FileManager.vue'),
   },
   {
     path: '/changelog',
     name: 'ChangelogPage',
-    component: () => import('@/views/BlankPage.vue'),
+    component: () => import('@/views/ChangeLogView.vue'),
   },
   {
     path: '/calendar',
     name: 'CalendarPage',
-    component: () => import('@/views/BlankPage.vue'),
+    component: () => import('@/views/CalendarView.vue'),
   },
   {
     path: '/chat',
