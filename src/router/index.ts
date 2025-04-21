@@ -80,12 +80,12 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/emails',
     name: 'EmailsPage',
-    component: () => import('@/views/BlankPage.vue'),
+    component: () => import('@/views/emails/EmailView.vue'),
   },
   {
     path: '/read-email',
     name: 'ReadEmailPage',
-    component: () => import('@/views/BlankPage.vue'),
+    component: () => import('@/views/emails/ReadEmailView.vue'),
   },
   {
     path: '/products',
