@@ -90,12 +90,12 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/products',
     name: 'ProductsGridPage',
-    component: () => import('@/views/BlankPage.vue'),
+    component: () => import('@/views/e-commerce/ProductGridView.vue'),
   },
   {
     path: '/products-list',
     name: 'ProductsListPage',
-    component: () => import('@/views/BlankPage.vue'),
+    component: () => import('@/views/e-commerce/ProductListView.vue'),
   },
   {
     path: '/add-product',
