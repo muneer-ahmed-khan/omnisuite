@@ -60,22 +60,22 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/leads',
     name: 'LeadsPage',
-    component: () => import('@/views/BlankPage.vue'),
+    component: () => import('@/views/crm/LeadsView.vue'),
   },
   {
     path: '/lead-details',
     name: 'LeadDetailsPage',
-    component: () => import('@/views/BlankPage.vue'),
+    component: () => import('@/views/crm/LeadsDetailsView.vue'),
   },
   {
     path: '/crm-contacts',
     name: 'ContactsListPage',
-    component: () => import('@/views/BlankPage.vue'),
+    component: () => import('@/views/crm/ContactsListView.vue'),
   },
   {
     path: '/crm-customers',
     name: 'CustomersListPage',
-    component: () => import('@/views/BlankPage.vue'),
+    component: () => import('@/views/crm/CustomersListView.vue'),
   },
   {
     path: '/emails',
