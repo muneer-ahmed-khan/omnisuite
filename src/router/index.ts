@@ -100,12 +100,12 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/add-product',
     name: 'AddProductPage',
-    component: () => import('@/views/BlankPage.vue'),
+    component: () => import('@/views/e-commerce/AddProductView.vue'),
   },
   {
     path: '/product-details',
     name: 'ProductDetailsPage',
-    component: () => import('@/views/BlankPage.vue'),
+    component: () => import('@/views/e-commerce/ProductDetailsView.vue'),
   },
   {
     path: '/orders',
